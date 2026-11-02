@@ -16,3 +16,6 @@ Lien partagé directement utilisable, sans compte ni code à saisir (réponse ex
 PDF original de l’utilisateur, y compris exemple de graphique en barres groupées page 6. Aucune réponse collectée fournie.
 ## Product Principles
 Transcription fidèle, traçabilité par référence papier, sauvegarde partagée réelle, calculs explicites, exports complets.
+
+## Interface et rédaction
+Correction explicite de l’utilisateur : cet outil sert à la saisie synchronisée et à l’analyse de données. Employer des intitulés fonctionnels et des consignes factuelles ; supprimer slogans, métaphores et formulations promotionnelles.

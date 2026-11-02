@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Regards d’école — Saisie & analyses",
-  description: "Saisissez les questionnaires anonymes de votre école en équipe. Analyses en français et export Excel complet.",
+  title: "Enquête école — Saisie et analyse",
+  description: "Saisie synchronisée des questionnaires anonymes CEE, analyse des données et exports Excel.",
   robots: {index:false,follow:false},
   icons: {
     icon: "/favicon.svg",

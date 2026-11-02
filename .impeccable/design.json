@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T17:25:11.057716+00:00",
+  "title": "Design System: Regards d’école",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papier clair",
+        "canonical": "#f5f6f2",
+        "tonalRamp": [
+          "oklch(15.0% 0.00538 117.92)",
+          "oklch(26.4% 0.00538 117.92)",
+          "oklch(37.9% 0.00538 117.92)",
+          "oklch(49.3% 0.00538 117.92)",
+          "oklch(60.7% 0.00538 117.92)",
+          "oklch(72.1% 0.00538 117.92)",
+          "oklch(83.6% 0.00538 117.92)",
+          "oklch(95.0% 0.00538 117.92)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Blanc de saisie",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(15.0% 0.00000 0.00)",
+          "oklch(26.4% 0.00000 0.00)",
+          "oklch(37.9% 0.00000 0.00)",
+          "oklch(49.3% 0.00000 0.00)",
+          "oklch(60.7% 0.00000 0.00)",
+          "oklch(72.1% 0.00000 0.00)",
+          "oklch(83.6% 0.00000 0.00)",
+          "oklch(95.0% 0.00000 0.00)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Encre végétale",
+        "canonical": "#253c34",
+        "tonalRamp": [
+          "oklch(15.0% 0.03233 170.46)",
+          "oklch(26.4% 0.03233 170.46)",
+          "oklch(37.9% 0.03233 170.46)",
+          "oklch(49.3% 0.03233 170.46)",
+          "oklch(60.7% 0.03233 170.46)",
+          "oklch(72.1% 0.03233 170.46)",
+          "oklch(83.6% 0.03233 170.46)",
+          "oklch(95.0% 0.03233 170.46)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Gris feuillage",
+        "canonical": "#69756d",
+        "tonalRamp": [
+          "oklch(15.0% 0.01889 156.55)",
+          "oklch(26.4% 0.01889 156.55)",
+          "oklch(37.9% 0.01889 156.55)",
+          "oklch(49.3% 0.01889 156.55)",
+          "oklch(60.7% 0.01889 156.55)",
+          "oklch(72.1% 0.01889 156.55)",
+          "oklch(83.6% 0.01889 156.55)",
+          "oklch(95.0% 0.01889 156.55)"
+        ]
+      },
+      "forest": {
+        "role": "primary",
+        "displayName": "Forêt",
+        "canonical": "#203f34",
+        "tonalRamp": [
+          "oklch(15.0% 0.04219 168.84)",
+          "oklch(26.4% 0.04219 168.84)",
+          "oklch(37.9% 0.04219 168.84)",
+          "oklch(49.3% 0.04219 168.84)",
+          "oklch(60.7% 0.04219 168.84)",
+          "oklch(72.1% 0.04219 168.84)",
+          "oklch(83.6% 0.04219 168.84)",
+          "oklch(95.0% 0.04219 168.84)"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Vert d’action",
+        "canonical": "#267c69",
+        "tonalRamp": [
+          "oklch(15.0% 0.08630 175.05)",
+          "oklch(26.4% 0.08630 175.05)",
+          "oklch(37.9% 0.08630 175.05)",
+          "oklch(49.3% 0.08630 175.05)",
+          "oklch(60.7% 0.08630 175.05)",
+          "oklch(72.1% 0.08630 175.05)",
+          "oklch(83.6% 0.08630 175.05)",
+          "oklch(95.0% 0.08630 175.05)"
+        ]
+      },
+      "green-dark": {
+        "role": "primary",
+        "displayName": "Vert profond",
+        "canonical": "#1b6554",
+        "tonalRamp": [
+          "oklch(15.0% 0.07649 174.04)",
+          "oklch(26.4% 0.07649 174.04)",
+          "oklch(37.9% 0.07649 174.04)",
+          "oklch(49.3% 0.07649 174.04)",
+          "oklch(60.7% 0.07649 174.04)",
+          "oklch(72.1% 0.07649 174.04)",
+          "oklch(83.6% 0.07649 174.04)",
+          "oklch(95.0% 0.07649 174.04)"
+        ]
+      },
+      "tint": {
+        "role": "primary",
+        "displayName": "Vert de sélection",
+        "canonical": "#eaf2ed",
+        "tonalRamp": [
+          "oklch(15.0% 0.01076 158.84)",
+          "oklch(26.4% 0.01076 158.84)",
+          "oklch(37.9% 0.01076 158.84)",
+          "oklch(49.3% 0.01076 158.84)",
+          "oklch(60.7% 0.01076 158.84)",
+          "oklch(72.1% 0.01076 158.84)",
+          "oklch(83.6% 0.01076 158.84)",
+          "oklch(95.0% 0.01076 158.84)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Filet végétal",
+        "canonical": "#dfe5dd",
+        "tonalRamp": [
+          "oklch(15.0% 0.01248 137.79)",
+          "oklch(26.4% 0.01248 137.79)",
+          "oklch(37.9% 0.01248 137.79)",
+          "oklch(49.3% 0.01248 137.79)",
+          "oklch(60.7% 0.01248 137.79)",
+          "oklch(72.1% 0.01248 137.79)",
+          "oklch(83.6% 0.01248 137.79)",
+          "oklch(95.0% 0.01248 137.79)"
+        ]
+      },
+      "input-border": {
+        "role": "neutral",
+        "displayName": "Input border",
+        "canonical": "#cdd7cd",
+        "tonalRamp": [
+          "oklch(15.0% 0.01735 145.42)",
+          "oklch(26.4% 0.01735 145.42)",
+          "oklch(37.9% 0.01735 145.42)",
+          "oklch(49.3% 0.01735 145.42)",
+          "oklch(60.7% 0.01735 145.42)",
+          "oklch(72.1% 0.01735 145.42)",
+          "oklch(83.6% 0.01735 145.42)",
+          "oklch(95.0% 0.01735 145.42)"
+        ]
+      },
+      "secondary-border": {
+        "role": "neutral",
+        "displayName": "Secondary border",
+        "canonical": "#ccd7cc",
+        "tonalRamp": [
+          "oklch(15.0% 0.01909 145.41)",
+          "oklch(26.4% 0.01909 145.41)",
+          "oklch(37.9% 0.01909 145.41)",
+          "oklch(49.3% 0.01909 145.41)",
+          "oklch(60.7% 0.01909 145.41)",
+          "oklch(72.1% 0.01909 145.41)",
+          "oklch(83.6% 0.01909 145.41)",
+          "oklch(95.0% 0.01909 145.41)"
+        ]
+      },
+      "focus-amber": {
+        "role": "secondary",
+        "displayName": "Ambre de focus",
+        "canonical": "#b5843e",
+        "tonalRamp": [
+          "oklch(15.0% 0.10561 73.65)",
+          "oklch(26.4% 0.10561 73.65)",
+          "oklch(37.9% 0.10561 73.65)",
+          "oklch(49.3% 0.10561 73.65)",
+          "oklch(60.7% 0.10561 73.65)",
+          "oklch(72.1% 0.10561 73.65)",
+          "oklch(83.6% 0.10561 73.65)",
+          "oklch(95.0% 0.10561 73.65)"
+        ]
+      },
+      "review-bg": {
+        "role": "secondary",
+        "displayName": "Fond de révision",
+        "canonical": "#f5eddd",
+        "tonalRamp": [
+          "oklch(15.0% 0.02289 84.59)",
+          "oklch(26.4% 0.02289 84.59)",
+          "oklch(37.9% 0.02289 84.59)",
+          "oklch(49.3% 0.02289 84.59)",
+          "oklch(60.7% 0.02289 84.59)",
+          "oklch(72.1% 0.02289 84.59)",
+          "oklch(83.6% 0.02289 84.59)",
+          "oklch(95.0% 0.02289 84.59)"
+        ]
+      },
+      "review-ink": {
+        "role": "secondary",
+        "displayName": "Ambre de révision",
+        "canonical": "#8e652a",
+        "tonalRamp": [
+          "oklch(15.0% 0.09174 73.31)",
+          "oklch(26.4% 0.09174 73.31)",
+          "oklch(37.9% 0.09174 73.31)",
+          "oklch(49.3% 0.09174 73.31)",
+          "oklch(60.7% 0.09174 73.31)",
+          "oklch(72.1% 0.09174 73.31)",
+          "oklch(83.6% 0.09174 73.31)",
+          "oklch(95.0% 0.09174 73.31)"
+        ]
+      },
+      "complete-bg": {
+        "role": "neutral",
+        "displayName": "Complete bg",
+        "canonical": "#eaf3e9",
+        "tonalRamp": [
+          "oklch(15.0% 0.01631 142.56)",
+          "oklch(26.4% 0.01631 142.56)",
+          "oklch(37.9% 0.01631 142.56)",
+          "oklch(49.3% 0.01631 142.56)",
+          "oklch(60.7% 0.01631 142.56)",
+          "oklch(72.1% 0.01631 142.56)",
+          "oklch(83.6% 0.01631 142.56)",
+          "oklch(95.0% 0.01631 142.56)"
+        ]
+      },
+      "complete-ink": {
+        "role": "neutral",
+        "displayName": "Complete ink",
+        "canonical": "#397643",
+        "tonalRamp": [
+          "oklch(15.0% 0.10189 147.48)",
+          "oklch(26.4% 0.10189 147.48)",
+          "oklch(37.9% 0.10189 147.48)",
+          "oklch(49.3% 0.10189 147.48)",
+          "oklch(60.7% 0.10189 147.48)",
+          "oklch(72.1% 0.10189 147.48)",
+          "oklch(83.6% 0.10189 147.48)",
+          "oklch(95.0% 0.10189 147.48)"
+        ]
+      },
+      "summary-bg": {
+        "role": "neutral",
+        "displayName": "Sauge de récapitulatif",
+        "canonical": "#edf1e7",
+        "tonalRamp": [
+          "oklch(15.0% 0.01390 124.55)",
+          "oklch(26.4% 0.01390 124.55)",
+          "oklch(37.9% 0.01390 124.55)",
+          "oklch(49.3% 0.01390 124.55)",
+          "oklch(60.7% 0.01390 124.55)",
+          "oklch(72.1% 0.01390 124.55)",
+          "oklch(83.6% 0.01390 124.55)",
+          "oklch(95.0% 0.01390 124.55)"
+        ]
+      },
+      "nav-active-bg": {
+        "role": "neutral",
+        "displayName": "Nav active bg",
+        "canonical": "#edf2e5",
+        "tonalRamp": [
+          "oklch(15.0% 0.01799 123.97)",
+          "oklch(26.4% 0.01799 123.97)",
+          "oklch(37.9% 0.01799 123.97)",
+          "oklch(49.3% 0.01799 123.97)",
+          "oklch(60.7% 0.01799 123.97)",
+          "oklch(72.1% 0.01799 123.97)",
+          "oklch(83.6% 0.01799 123.97)",
+          "oklch(95.0% 0.01799 123.97)"
+        ]
+      },
+      "nav-active-ink": {
+        "role": "neutral",
+        "displayName": "Nav active ink",
+        "canonical": "#204b3a",
+        "tonalRamp": [
+          "oklch(15.0% 0.05672 165.22)",
+          "oklch(26.4% 0.05672 165.22)",
+          "oklch(37.9% 0.05672 165.22)",
+          "oklch(49.3% 0.05672 165.22)",
+          "oklch(60.7% 0.05672 165.22)",
+          "oklch(72.1% 0.05672 165.22)",
+          "oklch(83.6% 0.05672 165.22)",
+          "oklch(95.0% 0.05672 165.22)"
+        ]
+      },
+      "nav-hover": {
+        "role": "neutral",
+        "displayName": "Nav hover",
+        "canonical": "#2c4b3e",
+        "tonalRamp": [
+          "oklch(15.0% 0.04340 165.74)",
+          "oklch(26.4% 0.04340 165.74)",
+          "oklch(37.9% 0.04340 165.74)",
+          "oklch(49.3% 0.04340 165.74)",
+          "oklch(60.7% 0.04340 165.74)",
+          "oklch(72.1% 0.04340 165.74)",
+          "oklch(83.6% 0.04340 165.74)",
+          "oklch(95.0% 0.04340 165.74)"
+        ]
+      },
+      "nav-text": {
+        "role": "neutral",
+        "displayName": "Nav text",
+        "canonical": "#c7d7c9",
+        "tonalRamp": [
+          "oklch(15.0% 0.02570 149.04)",
+          "oklch(26.4% 0.02570 149.04)",
+          "oklch(37.9% 0.02570 149.04)",
+          "oklch(49.3% 0.02570 149.04)",
+          "oklch(60.7% 0.02570 149.04)",
+          "oklch(72.1% 0.02570 149.04)",
+          "oklch(83.6% 0.02570 149.04)",
+          "oklch(95.0% 0.02570 149.04)"
+        ]
+      },
+      "option-selected-bg": {
+        "role": "neutral",
+        "displayName": "Option selected bg",
+        "canonical": "#edf5ec",
+        "tonalRamp": [
+          "oklch(15.0% 0.01459 142.23)",
+          "oklch(26.4% 0.01459 142.23)",
+          "oklch(37.9% 0.01459 142.23)",
+          "oklch(49.3% 0.01459 142.23)",
+          "oklch(60.7% 0.01459 142.23)",
+          "oklch(72.1% 0.01459 142.23)",
+          "oklch(83.6% 0.01459 142.23)",
+          "oklch(95.0% 0.01459 142.23)"
+        ]
+      },
+      "option-selected-border": {
+        "role": "neutral",
+        "displayName": "Option selected border",
+        "canonical": "#79a58b",
+        "tonalRamp": [
+          "oklch(15.0% 0.06115 158.36)",
+          "oklch(26.4% 0.06115 158.36)",
+          "oklch(37.9% 0.06115 158.36)",
+          "oklch(49.3% 0.06115 158.36)",
+          "oklch(60.7% 0.06115 158.36)",
+          "oklch(72.1% 0.06115 158.36)",
+          "oklch(83.6% 0.06115 158.36)",
+          "oklch(95.0% 0.06115 158.36)"
+        ]
+      },
+      "option-selected-ink": {
+        "role": "neutral",
+        "displayName": "Option selected ink",
+        "canonical": "#204f3a",
+        "tonalRamp": [
+          "oklch(15.0% 0.06324 161.98)",
+          "oklch(26.4% 0.06324 161.98)",
+          "oklch(37.9% 0.06324 161.98)",
+          "oklch(49.3% 0.06324 161.98)",
+          "oklch(60.7% 0.06324 161.98)",
+          "oklch(72.1% 0.06324 161.98)",
+          "oklch(83.6% 0.06324 161.98)",
+          "oklch(95.0% 0.06324 161.98)"
+        ]
+      },
+      "error-bg": {
+        "role": "secondary",
+        "displayName": "Error bg",
+        "canonical": "#fbede5",
+        "tonalRamp": [
+          "oklch(15.0% 0.01863 51.97)",
+          "oklch(26.4% 0.01863 51.97)",
+          "oklch(37.9% 0.01863 51.97)",
+          "oklch(49.3% 0.01863 51.97)",
+          "oklch(60.7% 0.01863 51.97)",
+          "oklch(72.1% 0.01863 51.97)",
+          "oklch(83.6% 0.01863 51.97)",
+          "oklch(95.0% 0.01863 51.97)"
+        ]
+      },
+      "error-ink": {
+        "role": "secondary",
+        "displayName": "Error ink",
+        "canonical": "#903f30",
+        "tonalRamp": [
+          "oklch(15.0% 0.11339 32.21)",
+          "oklch(26.4% 0.11339 32.21)",
+          "oklch(37.9% 0.11339 32.21)",
+          "oklch(49.3% 0.11339 32.21)",
+          "oklch(60.7% 0.11339 32.21)",
+          "oklch(72.1% 0.11339 32.21)",
+          "oklch(83.6% 0.11339 32.21)",
+          "oklch(95.0% 0.11339 32.21)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Message d’accueil seulement."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titre principal d’une vue."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Titres de section et panneaux."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Textes principaux dans les espaces de travail."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Labels de champs."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Actions principales et secondaires."
+      },
+      "question": {
+        "displayName": "Question",
+        "purpose": "Légendes des questions papier."
+      }
+    },
+    "shadows": [
+      {
+        "name": "notification",
+        "value": "0 8px 30px #213e2a22",
+        "purpose": "Notification flottante au-dessus du contenu."
+      },
+      {
+        "name": "mobile-drawer",
+        "value": "12px 0 40px #243b3333",
+        "purpose": "Tiroir de navigation mobile ouvert."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-color",
+        "value": "background .16s, color .16s",
+        "purpose": "Retour de survol court des boutons."
+      },
+      {
+        "name": "mobile-drawer",
+        "value": "transform .2s",
+        "purpose": "Ouverture et fermeture de la navigation mobile."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}",
+        "purpose": "Aucun mouvement indispensable."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1200px"
+      },
+      {
+        "name": "single-column",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Action principale",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Enregistrer ou poursuivre la transcription.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Enregistrer le brouillon</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 15px;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:650;min-height:42px;cursor:pointer;transition:background .16s,color .16s;background:var(--green,#267c69);border:1px solid var(--green,#267c69);color:var(--white,#fff)}.ds-primary:hover:not(:disabled){background:var(--green-dark,#1b6554)}.ds-primary:focus-visible{outline:3px solid #b5843e;outline-offset:3px;}.ds-primary:disabled{opacity:.48;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Action secondaire",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Action complémentaire sans concurrencer la sauvegarde.",
+      "html": "<button class=\"ds-secondary\" type=\"button\">Nouvelle fiche</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 15px;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:650;min-height:42px;cursor:pointer;transition:background .16s,color .16s;background:var(--white,#fff);border:1px solid #ccd7cc;color:var(--ink,#253c34)}.ds-secondary:hover:not(:disabled){background:var(--tint,#eaf2ed)}.ds-secondary:focus-visible{outline:3px solid #b5843e;outline-offset:3px;}.ds-secondary:disabled{opacity:.48;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Action textuelle",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Action légère à côté du contenu.",
+      "html": "<button type=\"button\" class=\"ds-text\">Ouvrir les analyses</button>",
+      "css": ".ds-text{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:var(--green,#267c69);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;padding:5px 0;cursor:pointer}.ds-text:hover{text-decoration:underline;text-underline-offset:4px}.ds-text:focus-visible{outline:3px solid #b5843e;outline-offset:3px;}"
+    },
+    {
+      "name": "Référence papier",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Un champ natif avec son label toujours visible.",
+      "html": "<label class=\"ds-field\" for=\"ds-paper-ref\">Référence du questionnaire<input id=\"ds-paper-ref\" value=\"E-001\" maxlength=\"50\"></label>",
+      "css": ".ds-field{display:grid;gap:9px;font-family:'DM Sans',sans-serif;font-size:11px;color:var(--ink,#253c34)}.ds-field input{max-width:100%;min-width:0;border:1px solid #cdd7cd;border-radius:7px;background:var(--white,#fff);color:var(--ink,#253c34);padding:11px 12px;font:600 13px 'DM Sans',sans-serif;letter-spacing:.04em;caret-color:var(--green,#267c69)}.ds-field input:focus-visible{outline:3px solid #b5843e;outline-offset:3px;}"
+    },
+    {
+      "name": "Navigation de travail",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Destination active claire dans une navigation forêt.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigation principale\"><button class=\"ds-nav-item ds-current\" aria-current=\"page\" type=\"button\">Saisir une réponse</button><button class=\"ds-nav-item\" type=\"button\">Les réponses</button></nav>",
+      "css": ".ds-nav{display:grid;gap:6px;background:var(--forest,#203f34);padding:16px;width:220px;border-radius:7px}.ds-nav-item{display:flex;align-items:center;gap:12px;padding:13px 12px;background:transparent;border:0;color:#c7d7c9;text-align:left;font:400 13px 'DM Sans',sans-serif;border-radius:7px;cursor:pointer}.ds-nav-item:hover{background:#2c4b3e;color:#fff}.ds-nav-item.ds-current{background:#edf2e5;color:#204b3a;font-weight:650}.ds-nav-item:focus-visible{outline:3px solid #b5843e;outline-offset:3px;}"
+    },
+    {
+      "name": "État à compléter",
+      "kind": "chip",
+      "refersTo": "status-draft",
+      "description": "Le statut de brouillon reste écrit et illustré.",
+      "html": "<span class=\"ds-status\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m16 3 5 5-12 12-6 1 1-6Z\"/><path d=\"m14 5 5 5\"/></svg>À compléter</span>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:5px;font:400 10px 'DM Sans',sans-serif;border-radius:4px;padding:3px 7px;white-space:nowrap;background:#f5eddd;color:#8e652a}"
+    },
+    {
+      "name": "Panneau de travail",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Surface principale plane, avec filets plutôt que relief.",
+      "html": "<section class=\"ds-card\"><h2>Informations générales</h2><p>Respecte les réponses du papier.</p></section>",
+      "css": ".ds-card{background:var(--white,#fff);color:var(--ink,#253c34);border:1px solid var(--line,#dfe5dd);border-radius:var(--radius,12px);padding:23px 25px}.ds-card h2{font:700 17px/1.5 'Manrope',sans-serif;margin:0}.ds-card p{font:400 11px/1.65 'DM Sans',sans-serif;color:var(--muted,#69756d);margin:6px 0 0;max-width:65ch}"
+    },
+    {
+      "name": "Réponse sélectionnée",
+      "kind": "input",
+      "refersTo": "answer-option-selected",
+      "description": "Une option garde le contrôle natif et un libellé complet.",
+      "html": "<label class=\"ds-option\"><input type=\"radio\" name=\"ds-answer\" checked><span>Tout à fait d’accord</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m20 6-11 11-5-5\"/></svg></label>",
+      "css": ".ds-option{display:inline-flex;align-items:center;gap:8px;border:1px solid #79a58b;min-height:39px;border-radius:6px;padding:8px 11px;font:400 11px/1.4 'DM Sans',sans-serif;cursor:pointer;background:#edf5ec;color:#204f3a}.ds-option:hover{background:#f4f7f1}.ds-option input{accent-color:var(--green,#267c69);width:13px;height:13px;margin:0;flex-shrink:0}.ds-option input:focus-visible{outline:3px solid #b5843e;outline-offset:3px;}.ds-option svg{margin-left:auto}"
+    },
+    {
+      "name": "Récapitulatif de fiche",
+      "kind": "card",
+      "refersTo": "entry-summary",
+      "description": "Surface tonale pour la référence et la progression.",
+      "html": "<aside class=\"ds-summary\"><h3>Votre fiche papier</h3><p><strong>0</strong> champs renseignés</p><div class=\"ds-progress\" aria-hidden=\"true\"></div><p class=\"ds-summary-note\">Enregistre pour partager avec l’équipe.</p></aside>",
+      "css": ".ds-summary{padding:22px 21px;background:#edf1e7;border-radius:var(--radius,12px);color:var(--ink,#253c34);width:240px}.ds-summary h3{font:700 14px/1.5 'Manrope',sans-serif;margin:0 0 25px}.ds-summary p{font:400 10px/1.65 'DM Sans',sans-serif;color:var(--muted,#69756d);margin:0}.ds-summary strong{font:700 22px 'Manrope',sans-serif;color:var(--ink,#253c34)}.ds-progress{height:5px;background:#d9e1d2;border-radius:3px;margin:10px 0}.ds-summary .ds-summary-note{font-size:9px;line-height:1.5}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le carnet de transcription partagé",
+    "overview": "Une interface de travail calme, précise et accueillante, où les feuilles papier restent la source et où chaque fiche garde une référence anonyme lisible. La navigation vert forêt pose un repère stable ; le canevas clair chaud et les formulaires blancs donnent la priorité à la lecture des questions.\n\nCette documentation décrit le système réalisé dans app/globals.css et app/page.tsx, sans maquette approuvée distincte. Les choix de composition peuvent évoluer avec la tâche ; la hiérarchie sobre, les contrôles natifs et les états de transcription explicites constituent la continuité visuelle.",
+    "keyCharacteristics": [
+      "Navigation forêt stable et espace de travail clair.",
+      "Typographie Manrope pour les titres, DM Sans pour la saisie.",
+      "Formulaires plats, séparateurs fins et choix natifs visibles.",
+      "Verts pour les actions et sélections ; ambre pour le focus et la révision.",
+      "Adaptation mobile en une colonne, sans mouvement essentiel."
+    ],
+    "rules": [
+      {
+        "name": "La couleur accompagne le libellé",
+        "body": "Toujours accompagner les états de couleur par un texte, une coche native ou une icône explicite.",
+        "section": "colors"
+      },
+      {
+        "name": "Une question, un séparateur",
+        "body": "Séparer les questions par un filet horizontal ; garder les groupes de réponses dans le même formulaire plutôt que multiplier les cartes imbriquées.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do conserver les labels, légendes de groupes et références papier visibles.",
+      "Do reprendre les tokens existants pour les nouvelles vues et garder le focus ambre au clavier.",
+      "Do distinguer sélection, brouillon, finalisation et erreur avec un libellé explicite.",
+      "Do placer le récapitulatif avant le questionnaire lorsque la largeur ne permet plus deux colonnes.",
+      "Do présenter les graphiques avec leurs libellés, bases et tableaux de valeurs."
+    ],
+    "donts": [
+      "Don't remplacer radios, cases à cocher ou sélecteurs par des contrôles sans comportement clavier natif.",
+      "Don't encadrer chaque question dans une nouvelle carte ni ajouter des ombres aux formulaires au repos.",
+      "Don't transformer les couleurs d’alerte en décoration générale.",
+      "Don't préremplir des réponses ou afficher des résultats fictifs dans les états vides.",
+      "Don't rendre une animation nécessaire à la compréhension d’un état."
+    ]
+  }
+}

@@ -195,11 +195,11 @@ Les titres légèrement resserrés structurent une interface de travail compacte
 
 Sur ordinateur, une barre latérale fixe occupe (242px), avec un espace de travail décalé de la même largeur. La barre supérieure blanche mesure (72px). Le contenu est centré dans une largeur maximale de (1580px), avec marges intérieures horizontales de (38px). La fiche principale occupe une colonne fluide, suivie d’un récapitulatif de (264px) avec un espace de (23px). Le récapitulatif reste visible par position collante à (24px) du haut.
 
-Les profils sont distribués en quatre colonnes égales. Les thèmes se parcourent dans une bande horizontale défilante. Les questions partagent un formulaire, avec une référence courte puis un libellé et les contrôles en retrait. Les réponses multiples utilisent deux colonnes lorsqu’elles disposent de la place nécessaire.
+Les profils sont distribués en quatre colonnes égales. La saisie affiche une question à la fois, avec compteur, thème, référence et boutons Précédent/Suivant. Un menu compact permet l’accès direct à une question. Les réponses multiples utilisent deux colonnes lorsqu’elles disposent de la place nécessaire.
 
 - À partir de (1600px), le récapitulatif s’élargit à (300px) et les formulaires respirent davantage.
 - À (1200px) et moins, la navigation passe à (211px), les marges à (24px), et le récapitulatif à (228px).
-- À (1000px) et moins, la saisie et les analyses passent en une colonne principale. Le récapitulatif précède le questionnaire ; ses informations conservent une petite grille interne lorsque la place le permet.
+- À (1000px) et moins, la saisie et les analyses passent en une colonne principale. Le récapitulatif suit la question sur une seule colonne ; ses informations conservent une petite grille interne lorsque la place le permet.
 - À (760px) et moins, la barre latérale devient un tiroir de (245px), le contenu utilise toute la largeur et des marges de (18px). La barre supérieure mesure (63px), les réponses multiples passent en une colonne et les retraits de saisie disparaissent. Les tableaux restent défilants horizontalement. L’accueil passe d’une répartition moitié-moitié à une seule colonne.
 
 Les espaces récurrents sont consignés dans le frontmatter ; les valeurs locales ajustent la densité selon le composant. Ne pas imposer une composition d’écran identique à toutes les tâches.
@@ -208,7 +208,7 @@ Les espaces récurrents sont consignés dans le frontmatter ; les valeurs locale
 
 Le système est plat au repos : contraste tonal, traits fins et espace indiquent les groupes. Les formulaires blancs et panneaux de résumé n’ont pas d’ombre. Seuls les éléments qui passent devant le contenu utilisent une ombre : notification flottante et tiroir mobile ouvert. Leur valeur exacte est conservée dans le sidecar.
 
-**The Une question, un séparateur Rule.** Séparer les questions par un filet horizontal ; garder les groupes de réponses dans le même formulaire plutôt que multiplier les cartes imbriquées.
+**Saisie séquentielle.** Afficher une seule question et ses options. Les boutons Précédent/Suivant restent disponibles en bas du formulaire ; la position est conservée dans le brouillon.
 
 ## Shapes
 
@@ -232,11 +232,11 @@ Fond forêt, icônes de trait et texte atténué au repos. L’élément actif e
 
 ### Chips / Status
 
-Badges compacts à petite courbure : « À compléter » ambre, « Finalisée » vert clair. Chaque badge contient un texte et une icône. Les onglets de profil indiquent leur sélection par un fond pâle et un trait inférieur vert ; les thèmes utilisent un contour fin et un fond blanc pour le thème actif.
+Badges compacts à petite courbure : « À compléter » ambre, « Finalisée » vert clair. Chaque badge contient un texte et une icône. Les onglets de profil indiquent leur sélection par un fond pâle et un trait inférieur vert ; le thème de la question actuelle figure sous le compteur.
 
 ### Cards / Containers
 
-Un panneau blanc à contour `line` et rayon `surface` constitue le niveau principal. Les questions restent séparées par des filets à l’intérieur. Les outils d’analyse, résultats et tableaux reprennent cette famille. Le récapitulatif utilise `summary-bg`, des espaces plus compacts et aucune ombre.
+Un panneau blanc à contour `line` et rayon `surface` constitue le niveau principal. Une seule question est visible dans le formulaire de saisie. Les outils d’analyse, résultats et tableaux reprennent cette famille. Le récapitulatif utilise `summary-bg`, des espaces plus compacts et aucune ombre.
 
 ### Transcription row
 
@@ -255,7 +255,7 @@ Les changements de couleur utilisent une transition courte de (160ms) ; l’ouve
 - Do conserver les labels, légendes de groupes et références papier visibles.
 - Do reprendre les tokens existants pour les nouvelles vues et garder le focus ambre au clavier.
 - Do distinguer sélection, brouillon, finalisation et erreur avec un libellé explicite.
-- Do placer le récapitulatif avant le questionnaire lorsque la largeur ne permet plus deux colonnes.
+- Do placer le récapitulatif après la question lorsque la largeur ne permet plus deux colonnes.
 - Do présenter les graphiques avec leurs libellés, bases et tableaux de valeurs.
 
 ### Don't:

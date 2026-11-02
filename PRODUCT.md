@@ -19,3 +19,5 @@ Transcription fidèle, traçabilité par référence papier, sauvegarde partagé
 
 ## Interface et rédaction
 Correction explicite de l’utilisateur : cet outil sert à la saisie synchronisée et à l’analyse de données. Employer des intitulés fonctionnels et des consignes factuelles ; supprimer slogans, métaphores et formulations promotionnelles.
+
+La saisie affiche une seule question à la fois, avec navigation Précédent/Suivant, compteur et accès direct par code. Le curseur est conservé dans le brouillon local.

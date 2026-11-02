@@ -564,8 +564,8 @@
         "section": "colors"
       },
       {
-        "name": "Une question, un séparateur",
-        "body": "Séparer les questions par un filet horizontal ; garder les groupes de réponses dans le même formulaire plutôt que multiplier les cartes imbriquées.",
+        "name": "Saisie séquentielle",
+        "body": "Afficher une question à la fois, avec compteur, boutons Précédent/Suivant et position conservée dans le brouillon.",
         "section": "elevation"
       }
     ],

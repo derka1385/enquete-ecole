@@ -6,7 +6,7 @@ Outil de saisie collaborative des questionnaires CEE École de septembre 2025.
 
 1. Créer une étude, puis copier son lien depuis « Partager le lien ».
 2. Répartir les piles de papier et attribuer une référence anonyme distincte à chaque questionnaire.
-3. Choisir Élèves, Parents, Enseignants ou Autres personnels ; transcrire les réponses par thème.
+3. Choisir Élèves, Parents, Enseignants ou Autres personnels ; transcrire les réponses une question à la fois avec Précédent / Suivant. Le menu « Aller à une question » permet une correction directe.
 4. Distinguer une réponse cochée de « Sans réponse sur papier », « Illisible / ambigu » et « Non posée / non applicable ».
 5. « Enregistrer le brouillon » rend la fiche disponible à l’équipe. Le brouillon automatique du navigateur reste sur cet appareil.
 6. « Finaliser & fiche suivante » ajoute la fiche aux statistiques, après confirmation des champs manquants ou incohérences.

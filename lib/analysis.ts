@@ -13,11 +13,33 @@ export const colors=['#267c69','#6e9e8c','#dc9b48','#bb6861','#84919a','#b0a080'
 const escape=(s:unknown)=>String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[x]!));
 const lineWrap=(text:string,max:number)=>{const words=text.split(/\s+/);const lines:string[]=[];let line='';for(const word of words){if((line+' '+word).trim().length>max&&line){lines.push(line);line=word;}else line+=(line?' ':'')+word;}if(line)lines.push(line);return lines;};
 export function chartSVG(data:Distribution[],title:string,percent=true):string {
- if(data.length===1&&data[0].counts.length>10){
- const d=data[0];const width=1440;const height=190+d.counts.length*44;const max=percent?100:Math.max(1,...d.counts.map(c=>c.count));
- let out=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escape(title)}"><rect width="100%" height="100%" fill="white"/><style>text{font-family:Arial,sans-serif;fill:#263831}</style><text x="40" y="44" font-size="25" font-weight="bold">${escape(title)}</text><text x="40" y="78" font-size="16">${escape(d.question.id)} · Base : ${d.base} réponses exploitables · ${percent?'Pourcentages':'Effectifs'}</text>`;
- d.counts.forEach((c,i)=>{const y=115+i*44;const value=percent?c.percent:c.count;out+=`<text x="440" y="${y+18}" font-size="16" text-anchor="end">${escape(c.label)}</text><rect x="460" y="${y}" width="${value/max*820}" height="25" fill="${colors[i%colors.length]}"/><text x="${475+value/max*820}" y="${y+19}" font-size="15">${value.toLocaleString('fr-FR',{maximumFractionDigits:1})}${percent?' %':''}</text>`;});
- out+=`<text x="40" y="${height-35}" font-size="14">Fiches finalisées. Sans avis inclus ; absences, illisibles et non-applicables exclus. Choix multiples : le total peut dépasser 100 %.</text></svg>`;return out;
+ if (data.length === 1) {
+   const {question, counts, base} = data[0];
+   const width = 1440;
+   const ceiling = percent ? 100 : Math.max(5, Math.ceil(Math.max(0, ...counts.map(c => c.count)) / 5) * 5);
+   const titleLines = lineWrap(title, 88);
+   const questionLines = lineWrap(question.id + ' · ' + question.label, 115);
+   const titleY = 46;
+   const questionY = titleY + titleLines.length * 30 + 12;
+   const baseY = questionY + questionLines.length * 23 + 14;
+   const rowsY = baseY + 30;
+   const rows = counts.map(c => ({...c, lines: lineWrap(c.label, 45)}));
+   const rowHeight = (lines: string[]) => Math.max(42, lines.length * 20 + 14);
+   const height = rowsY + rows.reduce((sum, row) => sum + rowHeight(row.lines), 0) + 72;
+   let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escape(title)}"><rect width="100%" height="100%" fill="white"/><style>text{font-family:Arial,sans-serif;fill:#263831}</style>`;
+   titleLines.forEach((line, i) => { svg += `<text x="40" y="${titleY + i * 30}" font-size="25" font-weight="bold">${escape(line)}</text>`; });
+   questionLines.forEach((line, i) => { svg += `<text x="40" y="${questionY + i * 23}" font-size="17">${escape(line)}</text>`; });
+   svg += `<text x="40" y="${baseY}" font-size="16">Base : ${base} réponses exploitables · ${percent ? 'Pourcentages' : 'Effectifs'}</text>`;
+   let y = rowsY;
+   rows.forEach(({lines, count, percent: share}, i) => {
+     const value = percent ? share : count;
+     const barWidth = value / ceiling * 820;
+     lines.forEach((line, j) => { svg += `<text x="440" y="${y + 17 + j * 20}" font-size="16" text-anchor="end">${escape(line)}</text>`; });
+     svg += `<rect x="460" y="${y}" width="820" height="24" fill="#edf2ed"/><rect x="460" y="${y}" width="${barWidth}" height="24" fill="${colors[i % colors.length]}"/><text x="${475 + barWidth}" y="${y + 17}" font-size="15">${value.toLocaleString('fr-FR', {maximumFractionDigits:1})}${percent ? ' %' : ''}</text>`;
+     y += rowHeight(lines);
+   });
+   const multiple = question.type === 'multi' ? ' Choix multiples : le total peut dépasser 100 %.' : '';
+   return svg + `<text x="40" y="${height - 35}" font-size="14">Fiches finalisées. Sans avis inclus ; absences, illisibles et non-applicables exclus.${multiple}</text></svg>`;
  }
  const grouped=data.length>1;const width=1440;const left=85,right=45;const labels=grouped?data.map(d=>d.question.id+' · '+d.question.label):data[0]?.counts.map(c=>c.label)||[];
  const groups=labels.length;const series=grouped?data[0]?.counts.map(c=>c.label)||[]:[percent?'Réponses (%)':'Réponses (effectifs)'];

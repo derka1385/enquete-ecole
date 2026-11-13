@@ -1,4 +1,4 @@
-# Regards d’école
+# Enquête école
 
 Outil de saisie collaborative des questionnaires CEE École de septembre 2025.
 
@@ -33,8 +33,17 @@ Le JSON est une copie des données brutes ; la restauration par import n’est p
 
 Interface React / Vinext sur Cloudflare Workers. Données partagées D1. Les accès à une étude nécessitent sa clé, conservée sous forme hachée côté serveur. Vérification de version sur les modifications, référence papier unique par étude et profil. Rafraîchissement toutes les 15 secondes. Ne pas changer la migration déjà déployée : ajouter une migration Drizzle pour toute évolution de schéma.
 
-Installation : utiliser le helper Sites. Développement : `npm run dev`. Vérification : `npx tsc --noEmit`. Construction : helper `build-site.mjs`. Migrations dans `drizzle/`. Le stockage local de prévisualisation est séparé de la base de production.
+### Lancer une copie locale
 
-## Stockage des téléchargements
+Prérequis : Node.js 22.13 ou plus récent et npm. Depuis le dossier du dépôt, exécuter :
 
-Les téléchargements utilisent le dossier choisi par le navigateur. L’utilisateur souhaite les conserver dans `/Users/petrinolann/Document` ou `/Users/petrinolann/Coding`, et non les nouveaux PNG dans Documents synchronisé avec iCloud.
+```sh
+npm run install:ci
+npm run build
+node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --persist-to .wrangler/state --config dist/server/wrangler.json --file drizzle/0000_easy_night_nurse.sql
+npm run dev -- --port 5173
+```
+
+Appliquer la migration une seule fois par base locale. Ensuite, `npm run dev -- --port 5173` suffit. Ouvrir [localhost:5173](http://127.0.0.1:5173/) et créer une étude. Les copies locales disposent chacune de leur propre base. Pour saisir ensemble, utiliser le lien complet de la même étude hébergée.
+
+Vérification TypeScript : `npx tsc --noEmit`.
